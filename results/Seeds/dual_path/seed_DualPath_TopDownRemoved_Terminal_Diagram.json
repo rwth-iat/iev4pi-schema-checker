@@ -1,0 +1,497 @@
+{
+  "timestamp": "2026-07-29T17:18:35.559933Z",
+  "document_type": "Terminal_Diagram",
+  "schema_version": "v0.8.3",
+  "metadata": {
+    "Schema_Version": "v0.8.3",
+    "Lookup_Version": "v0.8.0",
+    "Publication_Date": "2026-07-29",
+    "Allowed_Element_Type_Extensions": null,
+    "Allowed_RepresentedItem_Type_Extensions": null,
+    "Cable_Modeling_Profile": "Core",
+    "Project_Lookup_Profile_ID": null
+  },
+  "sheet_stats": {
+    "Rules": {
+      "rows": 70,
+      "columns": 6
+    },
+    "Schema_Metadata": {
+      "rows": 7,
+      "columns": 4
+    },
+    "Document_ID": {
+      "rows": 1,
+      "columns": 10
+    },
+    "Document_Data": {
+      "rows": 2,
+      "columns": 11
+    },
+    "Revision_Data": {
+      "rows": 5,
+      "columns": 8
+    },
+    "Document_RepresentedItem": {
+      "rows": 5,
+      "columns": 10
+    },
+    "Object": {
+      "rows": 696,
+      "columns": 19
+    },
+    "Cluster": {
+      "rows": 90,
+      "columns": 13
+    },
+    "Object_Cluster": {
+      "rows": 1191,
+      "columns": 4
+    },
+    "Elements_TopDown": {
+      "rows": 177,
+      "columns": 8
+    },
+    "Elements_from_Cluster": {
+      "rows": 90,
+      "columns": 9
+    },
+    "Match_Result": {
+      "rows": 183,
+      "columns": 14
+    },
+    "Element_ID": {
+      "rows": 182,
+      "columns": 14
+    },
+    "Element_RepresentedItem_Mapping": {
+      "rows": 56,
+      "columns": 6
+    },
+    "Element_Data": {
+      "rows": 192,
+      "columns": 11
+    },
+    "Element_Data_Source": {
+      "rows": 192,
+      "columns": 11
+    },
+    "RepresentedItem_Data": {
+      "rows": 10,
+      "columns": 11
+    },
+    "RepresentedItem_Data_Source": {
+      "rows": 10,
+      "columns": 11
+    },
+    "Element_Classification": {
+      "rows": 182,
+      "columns": 10
+    },
+    "Connection_ID": {
+      "rows": 89,
+      "columns": 9
+    },
+    "Connection_Data": {
+      "rows": 249,
+      "columns": 11
+    },
+    "Connection_Data_Source": {
+      "rows": 249,
+      "columns": 11
+    },
+    "Layer_ID": {
+      "rows": 5,
+      "columns": 7
+    },
+    "Attribute_Lookup": {
+      "rows": 152,
+      "columns": 11
+    },
+    "Enum_Lookup": {
+      "rows": 338,
+      "columns": 6
+    },
+    "Document_Data_Source": {
+      "rows": 2,
+      "columns": 11
+    },
+    "Revision_Data_Source": {
+      "rows": 5,
+      "columns": 11
+    },
+    "Element_Classification_Source": {
+      "rows": 182,
+      "columns": 11
+    }
+  },
+  "rule_summary": {
+    "D1/A-structural": {
+      "status": "PASS",
+      "description": "Prüft, ob alle Pflichtblätter vorhanden sind und die Workbook-Struktur dem geforderten Schema entspricht.",
+      "details": []
+    },
+    "D2-ordering": {
+      "status": "PASS",
+      "description": "Prüft die Reihenfolge der Pflicht- und Optionalblätter gemäß der Spezifikation.",
+      "details": []
+    },
+    "A-structural": {
+      "status": "PASS",
+      "description": "Prüft grundlegende Strukturmerkmale wie fehlende Schlüsselspalten und doppelte Primärschlüssel.",
+      "details": []
+    },
+    "I1": {
+      "status": "PASS",
+      "description": "Prüft, ob Referenzen aus Element_ID auf gültige Match-Ergebnisse zeigen.",
+      "details": []
+    },
+    "I5": {
+      "status": "PASS",
+      "description": "Prüft, ob Object_Cluster-Einträge nur auf vorhandene Object- und Cluster-IDs verweisen.",
+      "details": []
+    },
+    "I7": {
+      "status": "PASS",
+      "description": "Prüft Topologie-Referenzen zwischen Objekten.",
+      "details": []
+    },
+    "I8": {
+      "status": "PASS",
+      "description": "Prüft, ob Verbindungsendpunkte auf gültige Elemente zeigen und die richtige CAEX-Typisierung haben.",
+      "details": []
+    },
+    "I9": {
+      "status": "PASS",
+      "description": "Prüft die Zuordnung zwischen Elementen und represented items.",
+      "details": []
+    },
+    "I10": {
+      "status": "PASS",
+      "description": "Prüft, ob Element-Daten nur auf vorhandene Elemente verweisen.",
+      "details": []
+    },
+    "I11": {
+      "status": "PASS",
+      "description": "Prüft, ob RepresentedItem-Daten nur auf vorhandene RepresentedItems verweisen.",
+      "details": []
+    },
+    "I12": {
+      "status": "PASS",
+      "description": "Prüft die Herkunftsbeziehungen der Daten- und Klassifikationsquellen.",
+      "details": []
+    },
+    "I12/D6": {
+      "status": "PASS",
+      "description": "Prüft, ob jede Datenzeile mindestens eine passende Quellzeile besitzt.",
+      "details": []
+    },
+    "I13": {
+      "status": "PASS",
+      "description": "Prüft, ob Attributnamen für den jeweiligen Scope in Attribute_Lookup definiert sind.",
+      "details": []
+    },
+    "I14": {
+      "status": "PASS",
+      "description": "Prüft, ob Attributwerte den erlaubten Enum-Lookup-Werten entsprechen.",
+      "details": []
+    },
+    "I15": {
+      "status": "PASS",
+      "description": "Prüft, ob Dokument-IDs in abhängigen Blättern gültig referenziert werden.",
+      "details": []
+    },
+    "I16": {
+      "status": "PASS",
+      "description": "Prüft die Integrität von Eltern-Kind-Beziehungen in Hierarchien.",
+      "details": []
+    },
+    "I17": {
+      "status": "PASS",
+      "description": "Prüft, ob Container-Cluster auf geschlossene Graphic-Objekte verweisen.",
+      "details": []
+    },
+    "I18": {
+      "status": "PASS",
+      "description": "Prüft Referenzen aus Elements_from_Cluster auf vorhandene Cluster.",
+      "details": []
+    },
+    "I19": {
+      "status": "PASS",
+      "description": "Prüft Match_Result-Referenzen auf TopDown- und Cluster-basierte Element-IDs.",
+      "details": []
+    },
+    "I20": {
+      "status": "FAIL",
+      "description": "Prüft, ob Match-Zustände und Resolution-Status konsistent sind.",
+      "details": [
+        "Match_Result row 60: Only_Cluster with Resolution_Status='Open' (terminal status required)"
+      ]
+    },
+    "I21": {
+      "status": "PASS",
+      "description": "Prüft, ob Element-IDs auf gültige Layer verweisen.",
+      "details": []
+    },
+    "I22": {
+      "status": "PASS",
+      "description": "Prüft, ob maximal eine Primary-Mapping pro Element existiert.",
+      "details": []
+    },
+    "I23": {
+      "status": "PASS",
+      "description": "Prüft inhaltlich Brücken-/Klemmleisten-Konsistenz für Terminal_Diagram-Workbooks (§11.9).",
+      "details": []
+    },
+    "I24": {
+      "status": "PASS",
+      "description": "Prüft inhaltlich Aderfarbe/Polarität-Konsistenz für Terminal_Diagram/Circuit_Diagram-Workbooks (§11.9).",
+      "details": []
+    },
+    "I26": {
+      "status": "SKIP",
+      "description": "Prüft inhaltlich Current_Path_Number-Konsistenz für Circuit_Diagram-Workbooks (§11.9).",
+      "details": [
+        "Not applicable: Document_Type='Terminal_Diagram' (rule scoped to Circuit_Diagram)."
+      ]
+    },
+    "I28": {
+      "status": "SKIP",
+      "description": "Prüft inhaltlich IEC-60617-Klassifikationsvollständigkeit für Circuit_Diagram-Workbooks (§11.9).",
+      "details": [
+        "Not applicable: Document_Type='Terminal_Diagram' (rule scoped to Circuit_Diagram)."
+      ]
+    },
+    "I29": {
+      "status": "PASS",
+      "description": "Prüft, ob die Source_Format-Information eindeutig und enum-konform vorliegt.",
+      "details": []
+    },
+    "I30": {
+      "status": "PASS",
+      "description": "Prüft polymorphe Klassifikationsreferenzen auf gültige Zielobjekte.",
+      "details": []
+    },
+    "I31": {
+      "status": "PASS",
+      "description": "Prüft das Kabelmodellierungsprofil und die zugehörigen Cable_Data-Referenzen.",
+      "details": []
+    },
+    "I32": {
+      "status": "PASS",
+      "description": "Prüft optionale Designation-Blätter und deren Eltern-Referenzen.",
+      "details": [
+        "No optional extension sheets present; nothing to check."
+      ]
+    },
+    "I2": {
+      "status": "PASS",
+      "description": "Prüft Match_Result-Zustände für 'Matched' und verlangt vollständige Identitäten.",
+      "details": []
+    },
+    "I3": {
+      "status": "PASS",
+      "description": "Prüft Match_Result-Zustände für 'Only_TopDown' und verlangt korrekte Belegung.",
+      "details": []
+    },
+    "I4": {
+      "status": "PASS",
+      "description": "Prüft Match_Result-Zustände für 'Only_Cluster' und verlangt korrekte Belegung.",
+      "details": []
+    },
+    "I6/I16": {
+      "status": "PASS",
+      "description": "Prüft Konsistenz von Hierarchien in Clustern und Elementen.",
+      "details": []
+    },
+    "I31/I25": {
+      "status": "PASS",
+      "description": "Prüft Cable_Data-Referenzen im Zusammenhang mit dem Kabelprofil.",
+      "details": [
+        "Core profile or Asset profile without Cable_Data_ID population; nothing to check."
+      ]
+    },
+    "Required_Attributes": {
+      "status": "WARNING",
+      "description": "Prüft, ob alle in Attribute_Lookup als Required=TRUE markierten Attribute für jedes anwendbare Objekt (nach Type_Constraint, §9.4) tatsächlich belegt sind (§9.2).",
+      "details": [
+        "Element_ID row 60 (Element_ID='E.60', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Element_ID row 61 (Element_ID='E.61', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Element_ID row 62 (Element_ID='E.62', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Element_ID row 63 (Element_ID='E.63', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Element_ID row 64 (Element_ID='E.64', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Element_ID row 65 (Element_ID='E.65', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Element_ID row 66 (Element_ID='E.66', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+        "Document_ID row 2 (Document_ID='D.1', scope=Document): required attribute 'Project_Name' not populated in Document_Data (Unspecifiable would count as populated, but the attribute is absent entirely)"
+      ]
+    },
+    "Cluster_Coverage": {
+      "status": "SKIP",
+      "description": "Prüft für PDF-Quellen, ob jedes nicht-Topology-Object in mindestens einem Cluster vorkommt (P3-Postbedingung, §11.4), sofern kein dokumentierter P3_Empty_Result vorliegt.",
+      "details": [
+        "Not applicable: Source_Format='Excel_Sheet' (only evaluated for PDF_Drawing sources)."
+      ]
+    }
+  },
+  "violations": [
+    {
+      "layer": 4,
+      "rule": "I20",
+      "detail": "Match_Result row 60: Only_Cluster with Resolution_Status='Open' (terminal status required)"
+    }
+  ],
+  "findings": [
+    {
+      "layer": 4,
+      "rule": "I20",
+      "detail": "Match_Result row 60: Only_Cluster with Resolution_Status='Open' (terminal status required)"
+    }
+  ],
+  "warnings": [
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 60 (Element_ID='E.60', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.60"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 61 (Element_ID='E.61', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.61"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 62 (Element_ID='E.62', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.62"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 63 (Element_ID='E.63', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.63"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 64 (Element_ID='E.64', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.64"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 65 (Element_ID='E.65', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.65"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Element_ID row 66 (Element_ID='E.66', scope=Element): required attribute 'Rated_Current' not populated in Element_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Rated_Current",
+      "ref": "E.66"
+    },
+    {
+      "layer": 2,
+      "rule": "Required_Attributes",
+      "detail": "Document_ID row 2 (Document_ID='D.1', scope=Document): required attribute 'Project_Name' not populated in Document_Data (Unspecifiable would count as populated, but the attribute is absent entirely)",
+      "group": "Project_Name",
+      "ref": "D.1"
+    }
+  ],
+  "benchmarks": {
+    "expected_mandatory_sheets": 28,
+    "present_sheets": 28,
+    "missing_mandatory_sheets": [],
+    "extra_sheets": [],
+    "rule_counts": {
+      "PASS": 32,
+      "FAIL": 1,
+      "SKIP": 3,
+      "WARNING": 1
+    },
+    "not_implemented_rules": [],
+    "warned_rules": [
+      "Required_Attributes"
+    ],
+    "implemented_rules": {
+      "total": 37,
+      "applicable": 33,
+      "passed": 32,
+      "failed": 1,
+      "warned": 1,
+      "not_run": 0,
+      "pass_pct": 96.96969696969697
+    },
+    "level1": {
+      "total": 37,
+      "applicable": 33,
+      "passed": 32,
+      "failed": 1,
+      "pass_pct": 96.96969696969697
+    },
+    "process_step_post_conditions": {
+      "satisfied": 9,
+      "decidable_total": 10,
+      "not_artifact_decidable": [],
+      "details": {
+        "P0": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Document_ID + Document_RepresentedItem populated; Document_Data_Source / Revision_Data_Source fully cover their parent rows."
+        },
+        "P1": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Object sheet populated with valid Object_Type on every row. (True per-source completeness -- 'every atomic source unit captured' -- is not decidable from the workbook alone; this checks the decidable proxy only.)"
+        },
+        "P2": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Elements_TopDown populated."
+        },
+        "P3": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Cluster + full Object_Cluster coverage of non-Topology Objects, or a documented P3_Empty_Result with both sheets empty."
+        },
+        "P4": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Every Elements_from_Cluster row has Derivation_Status set, and every Cluster is referenced by at least one Elements_from_Cluster row."
+        },
+        "P5": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Every Elements_TopDown row and every Element_Derived Elements_from_Cluster row appears in >=1 Match_Result row."
+        },
+        "P6": {
+          "decidable": true,
+          "satisfied": false,
+          "note": "No Match_Result row has Resolution_Status=Open."
+        },
+        "P7": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Element_ID populated and every row has a resolvable Source_Match_ID."
+        },
+        "P8": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Element_Classification_Source / Element_Data_Source / RepresentedItem_Data_Source fully cover their parent rows."
+        },
+        "P9": {
+          "decidable": true,
+          "satisfied": true,
+          "note": "Connection_Data_Source fully covers Connection_Data; every populated Source_Topology_Object_ID resolves to an existing Object."
+        }
+      }
+    }
+  }
+}

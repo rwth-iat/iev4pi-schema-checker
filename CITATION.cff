@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper it accompanies (see preferred-citation)."
+title: "IEV4PI Schema Checker"
+type: software
+version: 0.8.3
+date-released: 2026-07-30
+url: "https://github.com/rwth-iat/iev4pi-schema-checker"
+authors:
+  - family-names: Schmetz
+    given-names: Benedikt
+    affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+    email: b.schmetz@iat.rwth-aachen.de
+  - family-names: Chen
+    given-names: Bowen
+    affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+  - family-names: Miny
+    given-names: Torben
+    affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+  - family-names: Kleinert
+    given-names: Tobias
+    affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+  - family-names: Vogel-Heuser
+    given-names: Birgit
+    affiliation: "Institute of Automation and Information Systems, Technical University of Munich"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "A General Method for Traceable and Verifiable Extraction from Engineering Documents"
+  authors:
+    - family-names: Schmetz
+      given-names: Benedikt
+      affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+    - family-names: Chen
+      given-names: Bowen
+      affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+    - family-names: Miny
+      given-names: Torben
+      affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+    - family-names: Kleinert
+      given-names: Tobias
+      affiliation: "Chair of Information and Automation Systems, RWTH Aachen University"
+    - family-names: Vogel-Heuser
+      given-names: Birgit
+      affiliation: "Institute of Automation and Information Systems, Technical University of Munich"
+  conference:
+    name: "IEEE Industrial Electronics Society Annual Conference (IECON 2026)"
+  year: 2026
+  status: submitted
